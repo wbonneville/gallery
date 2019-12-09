@@ -1,14 +1,16 @@
 import image1 from "./images/fall1.jpg";
 import image2 from "./images/spring1.jpg";
+import image3 from "./images/art.jpg";
 
-export const data = [
+export const initialData = [
   {
     sys: {
       id: "1"
     },
     fields: {
       name: "a beautiful photo",
-      type: "vertical",
+      vertical: true,
+      horizontal: false,
       animal: false,
       person: false,
       spring: false,
@@ -30,7 +32,8 @@ export const data = [
     },
     fields: {
       name: "a beautiful photo",
-      type: "vertical",
+      vertical: false,
+      horizontal: true,
       animal: false,
       person: false,
       spring: false,
@@ -41,7 +44,7 @@ export const data = [
 
       image: {
         file: {
-          url: image2
+          url: image3
         }
       }
     }
@@ -52,7 +55,8 @@ export const data = [
     },
     fields: {
       name: "a beautiful photo",
-      type: "vertical",
+      vertical: true,
+      horizontal: false,
       animal: false,
       person: false,
       spring: false,
@@ -74,7 +78,8 @@ export const data = [
     },
     fields: {
       name: "a beautiful photo",
-      type: "vertical",
+      vertical: true,
+      horizontal: false,
       animal: false,
       person: false,
       spring: false,
@@ -96,7 +101,8 @@ export const data = [
     },
     fields: {
       name: "a beautiful photo",
-      type: "vertical",
+      vertical: true,
+      horizontal: false,
       animal: false,
       person: false,
       spring: false,
@@ -118,7 +124,8 @@ export const data = [
     },
     fields: {
       name: "a beautiful photo",
-      type: "vertical",
+      vertical: true,
+      horizontal: false,
       animal: false,
       person: false,
       spring: false,

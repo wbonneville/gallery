@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-import { data } from "./data";
+import { initialData } from "./data";
 
 const Styles = styled.div`
   flex-direction: row;
@@ -15,13 +15,41 @@ const Div = styled.div`
   }
 `;
 
+const DivTwo = styled.div`
+  margin-top: 12px;
+
+  & img {
+    max-width: 100%;
+    min-height: 100%;
+  }
+`;
+
 const Gallery = () => {
+  const [data, setData] = useState(initialData);
+
   return (
     <Styles className="row">
       {data.map(item => (
-        <Div className="col-xs-3">
-          <img key={item.sys.id} alt="fall" src={item.fields.image.file.url} />
-        </Div>
+        <>
+          {item.fields.vertical === true && (
+            <Div className="col-xs-3">
+              <img
+                key={item.sys.id}
+                alt="fall"
+                src={item.fields.image.file.url}
+              />
+            </Div>
+          )}
+          {item.fields.horizontal === true && (
+            <DivTwo className="col-xs-6">
+              <img
+                key={item.sys.id}
+                alt="fall"
+                src={item.fields.image.file.url}
+              />
+            </DivTwo>
+          )}
+        </>
       ))}
     </Styles>
   );
