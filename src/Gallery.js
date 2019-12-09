@@ -6,11 +6,17 @@ const Styles = styled.div`
   display: flex;
 `;
 
+const Img = styled.img`
+  width: 20%;
+`;
+
 const Gallery = () => {
   return (
     <Styles>
       {data.map(item => (
-        <div key={item.sys.id}>{item.fields.name}</div>
+        <div key={item.sys.id}>
+          <Img alt="fall" src={item.fields.image.file.url} />
+        </div>
       ))}
     </Styles>
   );
