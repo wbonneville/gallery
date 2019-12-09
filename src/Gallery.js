@@ -18,8 +18,7 @@ const DivTwo = styled.div`
   margin-top: 12px;
 
   & img {
-    max-width: 100%;
-    min-height: 100%;
+    width: 100%;
   }
 `;
 
@@ -31,7 +30,7 @@ const Gallery = ({ initialData }) => {
       {data.map(item => (
         <>
           {item.fields.vertical === true && (
-            <Div className="col-xs-3">
+            <Div className="col-xs-4">
               <img
                 key={item.sys.id}
                 alt="fall"
@@ -40,7 +39,7 @@ const Gallery = ({ initialData }) => {
             </Div>
           )}
           {item.fields.horizontal === true && (
-            <DivTwo className="col-xs-6">
+            <DivTwo className="col-xs-12">
               <img
                 key={item.sys.id}
                 alt="fall"
