@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { initialData } from "./data";
 
 const Styles = styled.div`
   flex-direction: row;
@@ -24,7 +23,7 @@ const DivTwo = styled.div`
   }
 `;
 
-const Gallery = () => {
+const Gallery = ({ initialData }) => {
   const [data, setData] = useState(initialData);
 
   return (
