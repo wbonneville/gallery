@@ -10,6 +10,7 @@ const Wrapper = styled.div`
 `;
 
 const Styles = styled.div`
+  background-color: #f7f8fa;
   margin-left: 4%;
   margin-right: 4%;
 
