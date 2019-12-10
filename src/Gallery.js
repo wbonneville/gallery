@@ -25,10 +25,23 @@ const MyImageDiv = styled.div`
   position: relative;
 
   & .name {
-    color: red;
+    color: white;
     position: absolute;
-    bottom: 3%;
+    font-size: 18px;
+    font-weight: 100;
     margin-left: 3%;
+    bottom: 3%;
+    animation: text 0.3s;
+
+    @keyframes text {
+      from {
+        transform: translateY(100%);
+      }
+
+      to {
+        transform: translateY(0%);
+      }
+    }
   }
 `;
 
@@ -67,7 +80,11 @@ const MyImage = ({ src, header }) => {
   const [ref, hovered] = useHover();
   return (
     <MyImageDiv className="row imageSpace">
-      {hovered && <h1 className="name">{header}</h1>}
+      {hovered && (
+        <div className="name">
+          <h1>{header}</h1>{" "}
+        </div>
+      )}
       <img ref={ref} className="image" alt="fall" src={src} />
     </MyImageDiv>
   );
