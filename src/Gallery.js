@@ -21,6 +21,24 @@ const Styles = styled.div`
 
 const Div = styled.div``;
 
+const MyImageDiv = styled.div`
+  position: relative;
+
+  & .name {
+    color: red;
+    position: absolute;
+    bottom: 3%;
+    margin-left: 3%;
+  }
+`;
+
+// const StyledH1 = styled.h1`
+//   color: red;
+//   z-index: 1;
+//   position: absolute;
+//   bottom: 20px;
+// `;
+
 // hover function
 
 const useHover = () => {
@@ -48,10 +66,10 @@ const useHover = () => {
 const MyImage = ({ src, header }) => {
   const [ref, hovered] = useHover();
   return (
-    <div className="row imageSpace">
-      {hovered && <h1>{header}</h1>}
+    <MyImageDiv className="row imageSpace">
+      {hovered && <h1 className="name">{header}</h1>}
       <img ref={ref} className="image" alt="fall" src={src} />
-    </div>
+    </MyImageDiv>
   );
 };
 
