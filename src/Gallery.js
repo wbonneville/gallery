@@ -71,17 +71,3 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
 };
 
 export default Gallery;
-
-{
-  /* 
-      {item.fields.horizontal === true && (
-              <DivTwo className="col-xs-6">
-                <img
-                  className="image"
-                  key={item.sys.id}
-                  alt="fall"
-                  src={item.fields.image.file.url}
-                />
-              </DivTwo>
-            )} */
-}
