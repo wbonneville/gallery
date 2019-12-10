@@ -21,6 +21,8 @@ const Styles = styled.div`
 
 const Div = styled.div``;
 
+// hover function
+
 const useHover = () => {
   const ref = useRef();
   const [hovered, setHovered] = useState(false);
@@ -40,6 +42,8 @@ const useHover = () => {
 
   return [ref, hovered];
 };
+
+// image component
 
 const MyImage = ({ src, header }) => {
   const [ref, hovered] = useHover();
