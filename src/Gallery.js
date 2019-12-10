@@ -30,8 +30,8 @@ const MyImageDiv = styled.div`
     font-size: 18px;
     font-weight: 100;
     margin-left: 3%;
-    bottom: 3%;
-    animation: text 0.3s;
+    bottom: 2%;
+    animation: text 0.1s;
 
     @keyframes text {
       from {
