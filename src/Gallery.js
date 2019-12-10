@@ -12,6 +12,10 @@ const Wrapper = styled.div`
 const Styles = styled.div`
   margin-left: 4%;
   margin-right: 4%;
+
+  & .imageSpace {
+    padding: 5px;
+  }
 `;
 
 const Div = styled.div``;
@@ -26,7 +30,7 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
       <Styles className="row">
         <Div className="col-xs-4">
           {data.map(item => (
-            <div className="row">
+            <div className="row imageSpace">
               <img
                 className="image"
                 key={item.sys.id}
@@ -38,7 +42,7 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
         </Div>
         <Div className="col-xs-4">
           {dataTwo.map(item => (
-            <div className="row">
+            <div className="row imageSpace">
               <img
                 className="image"
                 key={item.sys.id}
@@ -50,7 +54,7 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
         </Div>
         <Div className="col-xs-4">
           {dataThree.map(item => (
-            <div className="row">
+            <div className="row imageSpace">
               <img
                 className="image"
                 key={item.sys.id}
