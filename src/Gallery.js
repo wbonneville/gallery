@@ -1,56 +1,82 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const Styles = styled.div`
+const Wrapper = styled.div`
   flex-direction: row;
-  margin-left: 3%;
-  margin-right: 3%;
-`;
-
-const Div = styled.div`
-  margin-top: 12px;
-  & img {
+  & .image {
+    height: 100%;
     width: 100%;
   }
 `;
 
-const DivTwo = styled.div`
-  margin-top: 12px;
-
-  & img {
-    width: 100%;
-  }
+const Styles = styled.div`
+  margin-left: 4%;
+  margin-right: 4%;
 `;
 
-const Gallery = ({ initialData }) => {
+const Div = styled.div``;
+
+const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
   const [data, setData] = useState(initialData);
+  const [dataTwo, setDataTwo] = useState(initialDataSetTwo);
+  const [dataThree, setDataThree] = useState(initialDataSetThree);
 
   return (
-    <Styles className="row">
-      {data.map(item => (
-        <>
-          {item.fields.vertical === true && (
-            <Div className="col-xs-4">
+    <Wrapper>
+      <Styles className="row">
+        <Div className="col-xs-4">
+          {data.map(item => (
+            <div className="row">
               <img
+                className="image"
                 key={item.sys.id}
                 alt="fall"
                 src={item.fields.image.file.url}
               />
-            </Div>
-          )}
-          {item.fields.horizontal === true && (
-            <DivTwo className="col-xs-12">
+            </div>
+          ))}
+        </Div>
+        <Div className="col-xs-4">
+          {dataTwo.map(item => (
+            <div className="row">
               <img
+                className="image"
                 key={item.sys.id}
                 alt="fall"
                 src={item.fields.image.file.url}
               />
-            </DivTwo>
-          )}
-        </>
-      ))}
-    </Styles>
+            </div>
+          ))}
+        </Div>
+        <Div className="col-xs-4">
+          {dataThree.map(item => (
+            <div className="row">
+              <img
+                className="image"
+                key={item.sys.id}
+                alt="fall"
+                src={item.fields.image.file.url}
+              />
+            </div>
+          ))}
+        </Div>
+      </Styles>
+    </Wrapper>
   );
 };
 
 export default Gallery;
+
+{
+  /* 
+      {item.fields.horizontal === true && (
+              <DivTwo className="col-xs-6">
+                <img
+                  className="image"
+                  key={item.sys.id}
+                  alt="fall"
+                  src={item.fields.image.file.url}
+                />
+              </DivTwo>
+            )} */
+}

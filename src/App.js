@@ -1,10 +1,15 @@
 import React from "react";
 import Gallery from "./Gallery";
-import { initialData } from "./data";
+import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
+
 function App() {
   return (
     <div className="App">
-      <Gallery initialData={initialData} />
+      <Gallery
+        initialData={initialData}
+        initialDataSetTwo={initialDataSetTwo}
+        initialDataSetThree={initialDataSetThree}
+      />
     </div>
   );
 }
