@@ -13,7 +13,7 @@ export const initialData = [
   {
     id: 1,
     fields: {
-      name: "a beautiful photo",
+      name: "Photo 1",
       vertical: true,
       horizontal: false,
       animal: false,
@@ -34,7 +34,7 @@ export const initialData = [
   {
     id: 2,
     fields: {
-      name: "a beautiful photo",
+      name: "Photo 2",
       vertical: false,
       horizontal: true,
       animal: false,
@@ -55,7 +55,7 @@ export const initialData = [
   {
     id: 3,
     fields: {
-      name: "a beautiful photo",
+      name: "Photo 3",
       vertical: true,
       horizontal: false,
       animal: false,
