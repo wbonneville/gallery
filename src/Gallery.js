@@ -24,7 +24,13 @@ const useHover = () => {
 
 // image component
 
-const MyImage = ({ src, header, likes, addLike }) => {
+const MyImage = ({ src, header }) => {
+  const [likes, setLikes] = useState(0);
+
+  const addLike = () => {
+    setLikes(likes + 1);
+  };
+
   const [ref, hovered] = useHover();
   return (
     <MyImageDiv ref={ref} className="row imageSpace">
@@ -42,15 +48,9 @@ const MyImage = ({ src, header, likes, addLike }) => {
 };
 
 const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
-  const initialLikes = 0;
   const [data, setData] = useState(initialData);
   const [dataTwo, setDataTwo] = useState(initialDataSetTwo);
   const [dataThree, setDataThree] = useState(initialDataSetThree);
-  const [likes, setLikes] = useState(initialLikes);
-
-  const addLike = () => {
-    setLikes(likes + 1);
-  };
 
   return (
     <Wrapper>
@@ -58,37 +58,28 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
         <Div className="col-xs-4">
           {data.map(item => (
             <MyImage
-              key={item.sys.id}
+              key={item.id}
               src={item.fields.image.file.url}
               header={item.fields.name}
-              likes={likes}
-              addLike={addLike}
             />
           ))}
         </Div>
         <Div className="col-xs-4">
           {dataTwo.map(item => (
-            <div className="row imageSpace">
-              <img
-                className="image"
-                key={item.sys.id}
-                alt="fall"
-                src={item.fields.image.file.url}
-                header={item.fields.name}
-              />
-            </div>
+            <MyImage
+              key={item.id}
+              src={item.fields.image.file.url}
+              header={item.fields.name}
+            />
           ))}
         </Div>
         <Div className="col-xs-4">
           {dataThree.map(item => (
-            <div className="row imageSpace">
-              <img
-                className="image"
-                key={item.sys.id}
-                alt="fall"
-                src={item.fields.image.file.url}
-              />
-            </div>
+            <MyImage
+              key={item.id}
+              src={item.fields.image.file.url}
+              header={item.fields.name}
+            />
           ))}
         </Div>
       </Styles>

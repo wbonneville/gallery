@@ -11,9 +11,7 @@ import image10 from "./images/spring1.jpg";
 
 export const initialData = [
   {
-    sys: {
-      id: "1"
-    },
+    id: 1,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -34,9 +32,7 @@ export const initialData = [
     }
   },
   {
-    sys: {
-      id: "2"
-    },
+    id: 2,
     fields: {
       name: "a beautiful photo",
       vertical: false,
@@ -57,9 +53,7 @@ export const initialData = [
     }
   },
   {
-    sys: {
-      id: "3"
-    },
+    id: 3,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -80,9 +74,7 @@ export const initialData = [
     }
   },
   {
-    sys: {
-      id: "4"
-    },
+    id: 4,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -103,9 +95,7 @@ export const initialData = [
     }
   },
   {
-    sys: {
-      id: "5"
-    },
+    id: 5,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -126,9 +116,7 @@ export const initialData = [
     }
   },
   {
-    sys: {
-      id: "6"
-    },
+    id: 6,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -152,9 +140,7 @@ export const initialData = [
 
 export const initialDataSetTwo = [
   {
-    sys: {
-      id: "1"
-    },
+    id: 7,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -175,9 +161,7 @@ export const initialDataSetTwo = [
     }
   },
   {
-    sys: {
-      id: "2"
-    },
+    id: 8,
     fields: {
       name: "a beautiful photo",
       vertical: false,
@@ -198,9 +182,7 @@ export const initialDataSetTwo = [
     }
   },
   {
-    sys: {
-      id: "3"
-    },
+    id: 9,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -221,9 +203,7 @@ export const initialDataSetTwo = [
     }
   },
   {
-    sys: {
-      id: "4"
-    },
+    id: 10,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -244,9 +224,7 @@ export const initialDataSetTwo = [
     }
   },
   {
-    sys: {
-      id: "5"
-    },
+    id: 11,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -267,9 +245,7 @@ export const initialDataSetTwo = [
     }
   },
   {
-    sys: {
-      id: "6"
-    },
+    id: 12,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -293,9 +269,7 @@ export const initialDataSetTwo = [
 
 export const initialDataSetThree = [
   {
-    sys: {
-      id: "1"
-    },
+    id: 13,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -316,9 +290,7 @@ export const initialDataSetThree = [
     }
   },
   {
-    sys: {
-      id: "2"
-    },
+    id: 14,
     fields: {
       name: "a beautiful photo",
       vertical: false,
@@ -339,9 +311,7 @@ export const initialDataSetThree = [
     }
   },
   {
-    sys: {
-      id: "3"
-    },
+    id: 15,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -362,9 +332,7 @@ export const initialDataSetThree = [
     }
   },
   {
-    sys: {
-      id: "4"
-    },
+    id: 16,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -385,9 +353,7 @@ export const initialDataSetThree = [
     }
   },
   {
-    sys: {
-      id: "5"
-    },
+    id: 17,
     fields: {
       name: "a beautiful photo",
       vertical: true,
@@ -408,9 +374,7 @@ export const initialDataSetThree = [
     }
   },
   {
-    sys: {
-      id: "6"
-    },
+    id: 18,
     fields: {
       name: "a beautiful photo",
       vertical: true,
