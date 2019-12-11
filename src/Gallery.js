@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import { Wrapper, Styles, Div, MyImageDiv } from "./Styles.js";
+import { Wrapper, Styles, Div, MyImageDiv, Info } from "./Styles.js";
 
 const useHover = () => {
   const ref = useRef();
@@ -38,7 +38,7 @@ const MyImage = ({ src, header }) => {
         <div className="name">
           <h1>
             {header} <span className="likespan">{likes}</span>{" "}
-            <i onClick={() => addLike()} class="likeicon far fa-heart"></i>
+            <i onClick={() => addLike()} className="likeicon far fa-heart"></i>
           </h1>{" "}
         </div>
       )}
@@ -52,12 +52,40 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
   const [dataTwo, setDataTwo] = useState(initialDataSetTwo);
   const [dataThree, setDataThree] = useState(initialDataSetThree);
 
+  const allCount = () => {
+    let dataCountOne = 0;
+    let dataCountTwo = 0;
+    let dataCountThree = 0;
+
+    data.map(item => {
+      dataCountOne += 1;
+    });
+
+    dataTwo.map(item => {
+      dataCountTwo += 1;
+    });
+
+    dataThree.map(item => {
+      dataCountThree += 1;
+    });
+
+    let total = dataCountOne + dataCountTwo + dataCountThree;
+    return total;
+  };
+
   return (
     <Wrapper>
+      <Info className="row center-xs">
+        <div className="col-xs-12">
+          <h2> photos {allCount()}</h2>
+          <h2> about</h2>
+        </div>
+      </Info>
       <Styles className="row">
         <Div className="col-xs-4">
-          {data.map(item => (
+          {data.map((item, index) => (
             <MyImage
+              index={index}
               key={item.id}
               src={item.fields.image.file.url}
               header={item.fields.name}

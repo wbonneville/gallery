@@ -63,6 +63,17 @@ export const MyImageDiv = styled.div`
   }
 `;
 
+export const Info = styled.div`
+  & h2 {
+    color: #0099e5;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    display: inline-block;
+    margin: 2%;
+  }
+`;
+
 // const StyledH1 = styled.h1`
 //   color: red;
 //   z-index: 1;
