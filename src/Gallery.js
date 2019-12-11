@@ -42,7 +42,7 @@ const MyImage = ({ src, header, likes, addLike }) => {
 };
 
 const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
-  const initialLikes = 1;
+  const initialLikes = 0;
   const [data, setData] = useState(initialData);
   const [dataTwo, setDataTwo] = useState(initialDataSetTwo);
   const [dataThree, setDataThree] = useState(initialDataSetThree);
