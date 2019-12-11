@@ -1,68 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import styled from "styled-components";
 
-const Wrapper = styled.div`
-  flex-direction: row;
-  & .image {
-    height: 100%;
-    width: 100%;
-  }
-`;
-
-const Styles = styled.div`
-  background-color: #f7f8fa;
-  margin-left: 4%;
-  margin-right: 4%;
-
-  & .imageSpace {
-    padding: 5px;
-  }
-`;
-
-const Div = styled.div``;
-
-const MyImageDiv = styled.div`
-  position: relative;
-
-  & .image {
-  }
-
-  & .name {
-    width: 97.5%;
-    color: white;
-    position: absolute;
-    font-size: 12px;
-    opacity: 0.9;
-    font-weight: 100;
-    margin-left: 3%;
-    bottom: 0.8%;
-    animation: text 0.2s;
-    /* background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.5) 90%
-    ); */
-
-    @keyframes text {
-      from {
-        transform: translateY(100%);
-      }
-
-      to {
-        transform: translateY(0%);
-      }
-    }
-  }
-`;
-
-// const StyledH1 = styled.h1`
-//   color: red;
-//   z-index: 1;
-//   position: absolute;
-//   bottom: 20px;
-// `;
-
-// hover function
+import { Wrapper, Styles, Div, MyImageDiv } from "./Styles.js";
 
 const useHover = () => {
   const ref = useRef();
@@ -86,13 +24,16 @@ const useHover = () => {
 
 // image component
 
-const MyImage = ({ src, header }) => {
+const MyImage = ({ src, header, likes, addLike }) => {
   const [ref, hovered] = useHover();
   return (
     <MyImageDiv ref={ref} className="row imageSpace">
       {hovered && (
         <div className="name">
-          <h1>{header}</h1>{" "}
+          <h1>
+            {header} <span className="likespan">{likes}</span>{" "}
+            <i onClick={() => addLike()} class="likeicon far fa-heart"></i>
+          </h1>{" "}
         </div>
       )}
       <img className="image" alt="fall" src={src} />
@@ -101,9 +42,15 @@ const MyImage = ({ src, header }) => {
 };
 
 const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
+  const initialLikes = 1;
   const [data, setData] = useState(initialData);
   const [dataTwo, setDataTwo] = useState(initialDataSetTwo);
   const [dataThree, setDataThree] = useState(initialDataSetThree);
+  const [likes, setLikes] = useState(initialLikes);
+
+  const addLike = () => {
+    setLikes(likes + 1);
+  };
 
   return (
     <Wrapper>
@@ -114,6 +61,8 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
               key={item.sys.id}
               src={item.fields.image.file.url}
               header={item.fields.name}
+              likes={likes}
+              addLike={addLike}
             />
           ))}
         </Div>
