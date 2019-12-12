@@ -31,6 +31,7 @@ export const Hero = styled.div`
 `;
 
 export const Container = styled.div`
+  /* top: 50% */
   top: 280px;
   position: absolute;
   margin-bottom: 10px;
