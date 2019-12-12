@@ -22,24 +22,32 @@ export const Div = styled.div``;
 
 export const MyImageDiv = styled.div`
   position: relative;
-
-  & .likespan {
-    margin-left: 30%;
+  font-size: 12px;
+  & .likes {
+    display: flex;
   }
 
-  & .likeicon {
-    margin-left: 0.5%;
+  & .span {
+    position: absolute;
+    left: 310px;
+    margin-right: 8%;
   }
 
-  & .likeicon:hover {
+  & .icon {
+    position: absolute;
+    left: 340px;
+    font-size: 14px;
+  }
+
+  & .icon:hover {
     color: red;
   }
 
   & .name {
-    width: 97.5%;
+    display: flex;
     color: white;
     position: absolute;
-    font-size: 12px;
+
     opacity: 0.9;
     font-weight: 100;
     margin-left: 3%;

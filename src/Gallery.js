@@ -36,10 +36,12 @@ const MyImage = ({ src, header }) => {
     <MyImageDiv ref={ref} className="row imageSpace">
       {hovered && (
         <div className="name">
-          <h1>
-            {header} <span className="likespan">{likes}</span>{" "}
-            <i onClick={() => addLike()} className="likeicon far fa-heart"></i>
-          </h1>{" "}
+          <h1 className="header">{header}</h1>
+
+          <h1 className="likes">
+            <span className="span">{likes}</span>{" "}
+            <i onClick={() => addLike()} className="icon fas fa-heart"></i>{" "}
+          </h1>
         </div>
       )}
       <img className="image" alt="fall" src={src} />
