@@ -26,18 +26,17 @@ const useHover = () => {
 
 const MyImage = ({ src, header }) => {
   const [likes, setLikes] = useState(0);
+  const [ref, hovered] = useHover();
 
   const addLike = () => {
     setLikes(likes + 1);
   };
 
-  const [ref, hovered] = useHover();
   return (
     <MyImageDiv ref={ref} className="row imageSpace">
       {hovered && (
         <div className="name">
           <h1 className="header">{header}</h1>
-
           <h1 className="likes">
             <span className="span">{likes}</span>{" "}
             <i onClick={() => addLike()} className="icon fas fa-heart"></i>{" "}
@@ -79,10 +78,20 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
     <Wrapper>
       <Info className="row center-xs">
         <div className="col-xs-12">
-          <h2> photos {allCount()}</h2>
-          <h2> about</h2>
+          <h4>
+            <i class="fas fa-globe-americas"></i>
+          </h4>
+        </div>
+        <div className="col-xs-12">
+          <hr />
+          <div className="links">
+            <h2> photos {allCount()}</h2>
+            <h2> about</h2>
+          </div>
+          <hr className="bottomHr" />
         </div>
       </Info>
+
       <Styles className="row">
         <Div className="col-xs-4">
           {data.map((item, index) => (

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
+  background-color: #f7f8fa;
   flex-direction: row;
   & .image {
     height: 100%;
@@ -9,10 +10,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Styles = styled.div`
-  background-color: #f7f8fa;
   margin-left: 4%;
   margin-right: 4%;
-
+  padding-top: 1.5%;
   & .imageSpace {
     padding: 5px;
   }
@@ -72,6 +72,8 @@ export const MyImageDiv = styled.div`
 `;
 
 export const Info = styled.div`
+  background-color: white;
+
   & h2 {
     color: #0099e5;
     text-transform: uppercase;
@@ -79,6 +81,25 @@ export const Info = styled.div`
     font-size: 16px;
     display: inline-block;
     margin: 2%;
+  }
+
+  & .links {
+    margin-top: -1%;
+    margin-bottom: -1%;
+  }
+
+  & .fa-globe-americas {
+    color: gray;
+    font-size: 18px;
+  }
+  & hr {
+    color: black;
+
+    border: 0.5px solid #eaeaea;
+  }
+
+  & .bottomHr {
+    margin-bottom: 0%;
   }
 `;
 
