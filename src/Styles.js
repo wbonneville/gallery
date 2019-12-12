@@ -1,4 +1,6 @@
+import React from "react";
 import styled from "styled-components";
+import image from "./images/background.jpg";
 
 export const Wrapper = styled.div`
   background-color: #f7f8fa;
@@ -19,6 +21,46 @@ export const Styles = styled.div`
 `;
 
 export const Div = styled.div``;
+
+export const Hero = styled.div`
+  background-color: gray;
+  background-image: url(${image});
+  height: 350px;
+  background-size: cover;
+  background-position: center bottom;
+`;
+
+export const Container = styled.div`
+  top: 48%;
+  position: absolute;
+  margin-bottom: 10px;
+`;
+
+export const Avatar = styled.div`
+  background-image: url(${image});
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  margin-top: 20px;
+  background-size: cover;
+  background-position: center;
+`;
+
+export const GalleryTitle = styled.div`
+  margin-top: 7%;
+  & h1 {
+    color: gray;
+    font-weight: 300;
+    font-size: 35px;
+  }
+
+  & h4 {
+    color: gray;
+    font-weight: 200;
+    font-size: 20px;
+  }
+`;
 
 export const MyImageDiv = styled.div`
   position: relative;
@@ -91,8 +133,12 @@ export const Info = styled.div`
   & .fa-globe-americas {
     color: gray;
     font-size: 18px;
+  }
+
+  & .icondiv {
     margin: 1%;
   }
+
   & hr {
     color: black;
 
@@ -103,12 +149,3 @@ export const Info = styled.div`
     margin-bottom: 0%;
   }
 `;
-
-// const StyledH1 = styled.h1`
-//   color: red;
-//   z-index: 1;
-//   position: absolute;
-//   bottom: 20px;
-// `;
-
-// hover function

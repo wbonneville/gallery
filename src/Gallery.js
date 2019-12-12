@@ -1,6 +1,16 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import { Wrapper, Styles, Div, MyImageDiv, Info } from "./Styles.js";
+import {
+  Wrapper,
+  Styles,
+  Div,
+  MyImageDiv,
+  Info,
+  GalleryTitle,
+  Hero,
+  Avatar,
+  Container
+} from "./Styles.js";
 
 const useHover = () => {
   const ref = useRef();
@@ -77,7 +87,22 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
   return (
     <Wrapper>
       <Info className="row center-xs">
-        <i class="fas fa-globe-americas"></i>
+        <Hero className="col-xs-12"></Hero>
+        <Container className="col-xs-12">
+          <Avatar></Avatar>
+        </Container>
+
+        <GalleryTitle className="col-xs-12">
+          {" "}
+          <h1>A Photo Gallery</h1>
+          <h4>By Wesley</h4>
+        </GalleryTitle>
+
+        <div className="icondiv col-xs-12">
+          {" "}
+          <i class="fas fa-globe-americas"></i>
+        </div>
+
         <div className="col-xs-12">
           <hr />
           <div className="links">
