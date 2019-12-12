@@ -77,11 +77,7 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
   return (
     <Wrapper>
       <Info className="row center-xs">
-        <div className="col-xs-12">
-          <h4>
-            <i class="fas fa-globe-americas"></i>
-          </h4>
-        </div>
+        <i class="fas fa-globe-americas"></i>
         <div className="col-xs-12">
           <hr />
           <div className="links">

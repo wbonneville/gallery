@@ -91,6 +91,7 @@ export const Info = styled.div`
   & .fa-globe-americas {
     color: gray;
     font-size: 18px;
+    margin: 1%;
   }
   & hr {
     color: black;
