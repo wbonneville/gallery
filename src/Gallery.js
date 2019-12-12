@@ -88,7 +88,7 @@ const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
     <Wrapper>
       <Info className="row center-xs">
         <Hero className="col-xs-12"></Hero>
-        <Container className="col-xs-12">
+        <Container>
           <Avatar></Avatar>
         </Container>
 
