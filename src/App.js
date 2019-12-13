@@ -1,5 +1,7 @@
 import React from "react";
 import Gallery from "./Gallery";
+
+// import data
 import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
 
 function App() {
