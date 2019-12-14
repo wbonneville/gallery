@@ -114,7 +114,7 @@ export const MyImageDiv = styled.div`
   }
 `;
 
-export const Info = styled.div`
+export const InfoWrapper = styled.div`
   background-color: white;
 
   & h2 {

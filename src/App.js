@@ -1,5 +1,6 @@
 import React from "react";
 import Gallery from "./Gallery";
+import About from "./About";
 
 // import data
 
@@ -17,6 +18,7 @@ function App() {
     <Router>
       <div className="App">
         <Route path="/" exact component={Gallery}></Route>
+        <Route path="/about" component={About}></Route>
       </div>
     </Router>
   );

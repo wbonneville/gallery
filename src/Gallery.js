@@ -1,18 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router";
 import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
+import Info from "./Info";
 
-import {
-  Wrapper,
-  Styles,
-  Div,
-  MyImageDiv,
-  Info,
-  GalleryTitle,
-  Hero,
-  Avatar,
-  Container
-} from "./Styles.js";
+import { Wrapper, Styles, Div, MyImageDiv } from "./Styles.js";
 
 const useHover = () => {
   const ref = useRef();
@@ -88,33 +78,7 @@ const Gallery = () => {
 
   return (
     <Wrapper>
-      <Info className="row center-xs">
-        <Hero className="col-xs-12"></Hero>
-        <Container>
-          <Avatar></Avatar>
-        </Container>
-
-        <GalleryTitle className="col-xs-12">
-          {" "}
-          <h1>A Photo Gallery</h1>
-          <h4>By Wesley</h4>
-        </GalleryTitle>
-
-        <div className="icondiv col-xs-12">
-          {" "}
-          <i class="fas fa-globe-americas"></i>
-        </div>
-
-        <div className="col-xs-12">
-          <hr />
-          <div className="links">
-            <h2> photos {allCount()}</h2>
-            <h2> about</h2>
-          </div>
-          <hr className="bottomHr" />
-        </div>
-      </Info>
-
+      <Info allCount={allCount} />
       <Styles className="row">
         <Div className="col-xs-4">
           {data.map((item, index) => (
