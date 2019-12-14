@@ -2,17 +2,23 @@ import React from "react";
 import Gallery from "./Gallery";
 
 // import data
-import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
+
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
+{
+  /* <Router>
+    <Route path="/" exact component={Join} />
+    <Route path="/chat" component={Chat} />
+  </Router> */
+}
 
 function App() {
   return (
-    <div className="App">
-      <Gallery
-        initialData={initialData}
-        initialDataSetTwo={initialDataSetTwo}
-        initialDataSetThree={initialDataSetThree}
-      />
-    </div>
+    <Router>
+      <div className="App">
+        <Route path="/" exact component={Gallery}></Route>
+      </div>
+    </Router>
   );
 }
 

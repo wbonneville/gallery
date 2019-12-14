@@ -1,4 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router";
+import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
 
 import {
   Wrapper,
@@ -58,7 +60,7 @@ const MyImage = ({ src, header }) => {
   );
 };
 
-const Gallery = ({ initialData, initialDataSetTwo, initialDataSetThree }) => {
+const Gallery = () => {
   const [data, setData] = useState(initialData);
   const [dataTwo, setDataTwo] = useState(initialDataSetTwo);
   const [dataThree, setDataThree] = useState(initialDataSetThree);
