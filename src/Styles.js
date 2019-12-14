@@ -2,6 +2,21 @@ import React from "react";
 import styled from "styled-components";
 import image from "./images/background.jpg";
 
+export const AboutWrapper = styled.div`
+  & h2 {
+    margin-top: 6%;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: red;
+    text-transform: uppercase;
+  }
+  & p {
+    text-align: left;
+    padding-bottom: 6%;
+  }
+`;
+
 export const Wrapper = styled.div`
   background-color: #f7f8fa;
   flex-direction: row;
