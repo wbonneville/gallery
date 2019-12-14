@@ -26,7 +26,7 @@ export default function Info({ allCount }) {
 
         <div className="icondiv col-xs-12">
           {" "}
-          <i class="fas fa-globe-americas"></i>
+          <i className="fas fa-globe-americas"></i>
         </div>
 
         <div className="col-xs-12">

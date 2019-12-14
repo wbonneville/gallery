@@ -23,7 +23,6 @@ export const initialData = [
       fall: false,
       winter: true,
       description: "This is a beautiful photo that I took.",
-
       image: {
         file: {
           url: image1

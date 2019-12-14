@@ -78,7 +78,8 @@ const Gallery = () => {
 
   return (
     <Wrapper>
-      <Info allCount={allCount} />
+      <Info allCount={allCount()} />
+
       <Styles className="row">
         <Div className="col-xs-4">
           {data.map((item, index) => (
