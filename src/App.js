@@ -6,13 +6,6 @@ import About from "./About";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-{
-  /* <Router>
-    <Route path="/" exact component={Join} />
-    <Route path="/chat" component={Chat} />
-  </Router> */
-}
-
 function App() {
   return (
     <Router>
