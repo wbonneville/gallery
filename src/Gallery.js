@@ -2,12 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
 import Info from "./Info";
 
+// import styled components from styles
+
 import { Wrapper, Styles, Div, MyImageDiv } from "./Styles.js";
 
 const useHover = () => {
   const ref = useRef();
+  // hover hook
   const [hovered, setHovered] = useState(false);
 
+  // set the state of hovered
   const enter = () => setHovered(true);
   const leave = () => setHovered(false);
 
