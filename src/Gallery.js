@@ -32,7 +32,9 @@ const useHover = () => {
 // image component
 
 const MyImage = ({ src, header }) => {
-  const { isOpen, openModal, closeModal, Modal } = useModal();
+  const { isOpen, openModal, closeModal, Modal } = useModal({
+    background: "rgba(0, 0, 0, 0.8)"
+  });
   const [likes, setLikes] = useState(0);
   const [ref, hovered] = useHover();
 
@@ -46,7 +48,7 @@ const MyImage = ({ src, header }) => {
   };
 
   return (
-    <MyImageDiv onClick={openModal} ref={ref} className="row imageSpace">
+    <MyImageDiv ref={ref} className="row imageSpace">
       {hovered && (
         <div className="name">
           <h1 className="header">{header}</h1>
@@ -65,7 +67,7 @@ const MyImage = ({ src, header }) => {
           </div>
         </Modal>
       )}
-      <img className="image" alt="fall" src={src} />
+      <img onClick={openModal} className="image" alt="fall" src={src} />
     </MyImageDiv>
   );
 };
