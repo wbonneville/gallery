@@ -14,14 +14,6 @@ export const initialData = [
     id: 1,
     fields: {
       name: "Photo 1",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
       image: {
         file: {
@@ -34,14 +26,6 @@ export const initialData = [
     id: 2,
     fields: {
       name: "Photo 2",
-      vertical: false,
-      horizontal: true,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -55,16 +39,7 @@ export const initialData = [
     id: 3,
     fields: {
       name: "Photo 3",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
-
       image: {
         file: {
           url: image2
@@ -76,14 +51,6 @@ export const initialData = [
     id: 4,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -97,14 +64,7 @@ export const initialData = [
     id: 5,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
+
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -118,14 +78,6 @@ export const initialData = [
     id: 6,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -142,14 +94,6 @@ export const initialDataSetTwo = [
     id: 7,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -163,14 +107,6 @@ export const initialDataSetTwo = [
     id: 8,
     fields: {
       name: "a beautiful photo",
-      vertical: false,
-      horizontal: true,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -184,14 +120,6 @@ export const initialDataSetTwo = [
     id: 9,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -205,14 +133,6 @@ export const initialDataSetTwo = [
     id: 10,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -226,14 +146,6 @@ export const initialDataSetTwo = [
     id: 11,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -247,14 +159,6 @@ export const initialDataSetTwo = [
     id: 12,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -271,14 +175,6 @@ export const initialDataSetThree = [
     id: 13,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -292,14 +188,6 @@ export const initialDataSetThree = [
     id: 14,
     fields: {
       name: "a beautiful photo",
-      vertical: false,
-      horizontal: true,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -313,14 +201,6 @@ export const initialDataSetThree = [
     id: 15,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -334,14 +214,6 @@ export const initialDataSetThree = [
     id: 16,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -355,14 +227,6 @@ export const initialDataSetThree = [
     id: 17,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
 
       image: {
@@ -376,16 +240,7 @@ export const initialDataSetThree = [
     id: 18,
     fields: {
       name: "a beautiful photo",
-      vertical: true,
-      horizontal: false,
-      animal: false,
-      person: false,
-      spring: false,
-      summer: false,
-      fall: false,
-      winter: true,
       description: "This is a beautiful photo that I took.",
-
       image: {
         file: {
           url: image6
