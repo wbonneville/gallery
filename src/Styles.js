@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import image from "./images/background.jpg";
+import buddha from "./images/buddha.png";
 
 export const AboutWrapper = styled.div`
   & h2 {
@@ -53,8 +54,9 @@ export const Container = styled.div`
 `;
 
 export const Avatar = styled.div`
-  background-image: url(${image});
-  border: 1px solid white;
+  background-image: url(${buddha});
+  border: 1px solid whitesmoke;
+
   border-radius: 50%;
   width: 115px;
   height: 115px;

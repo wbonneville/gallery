@@ -335,19 +335,6 @@ export const initialData = [
         }
       }
     }
-  },
-  {
-    id: 6,
-    fields: {
-      name: "a beautiful photo",
-      description: "This is a beautiful photo that I took.",
-
-      image: {
-        file: {
-          url: image90
-        }
-      }
-    }
   }
 ];
 
@@ -819,6 +806,19 @@ export const initialDataSetThree = [
       image: {
         file: {
           url: image92
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image90
         }
       }
     }
