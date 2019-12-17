@@ -3,6 +3,10 @@ import styled from "styled-components";
 import image from "./images/background.jpg";
 import buddha from "./images/buddha.png";
 
+export const ModalImage = styled.img`
+  width: 500px;
+`;
+
 export const AboutWrapper = styled.div`
   & h2 {
     margin-top: 12%;

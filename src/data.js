@@ -93,6 +93,7 @@ export const initialData = [
   {
     id: 1,
     fields: {
+      vertical: true,
       name: "Photo 1",
       description: "This is a beautiful photo that I took.",
       image: {

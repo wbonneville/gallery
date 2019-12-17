@@ -1,10 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
 import Info from "./Info";
+import useModal from "use-react-modal";
 
 // import styled components from styles
 
-import { Wrapper, Styles, Div, MyImageDiv } from "./Styles.js";
+import { Wrapper, Styles, Div, MyImageDiv, ModalImage } from "./Styles.js";
 
 const useHover = () => {
   const ref = useRef();
@@ -31,6 +32,7 @@ const useHover = () => {
 // image component
 
 const MyImage = ({ src, header }) => {
+  const { isOpen, openModal, closeModal, Modal } = useModal();
   const [likes, setLikes] = useState(0);
   const [ref, hovered] = useHover();
 
@@ -44,7 +46,7 @@ const MyImage = ({ src, header }) => {
   };
 
   return (
-    <MyImageDiv ref={ref} className="row imageSpace">
+    <MyImageDiv onClick={openModal} ref={ref} className="row imageSpace">
       {hovered && (
         <div className="name">
           <h1 className="header">{header}</h1>
@@ -53,6 +55,15 @@ const MyImage = ({ src, header }) => {
             <i onClick={() => addLike()} className="icon fas fa-heart"></i>{" "}
           </h1>
         </div>
+      )}
+      {isOpen && (
+        <Modal>
+          <div className="row middle-xs">
+            <div className="col-xs-6">
+              <ModalImage alt="modal" src={src}></ModalImage>
+            </div>
+          </div>
+        </Modal>
       )}
       <img className="image" alt="fall" src={src} />
     </MyImageDiv>
