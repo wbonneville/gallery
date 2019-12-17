@@ -122,7 +122,7 @@ export const initialData = [
       description: "This is a beautiful photo that I took.",
       image: {
         file: {
-          url: image4
+          url: image97
         }
       }
     }
@@ -166,10 +166,7 @@ export const initialData = [
         }
       }
     }
-  }
-];
-
-export const initialDataSetTwo = [
+  },
   {
     id: 7,
     fields: {
@@ -178,7 +175,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image8
+          url: image27
         }
       }
     }
@@ -191,7 +188,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image9
+          url: image28
         }
       }
     }
@@ -204,7 +201,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image10
+          url: image29
         }
       }
     }
@@ -217,7 +214,347 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image18
+          url: image30
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image31
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image32
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image33
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image34
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image35
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image36
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image37
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image38
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image39
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image90
+        }
+      }
+    }
+  }
+];
+
+export const initialDataSetTwo = [
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image41
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image66
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image89
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image44
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image86
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image84
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image83
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image48
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image79
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image50
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image51
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image52
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image53
+        }
+      }
+    }
+  },
+  {
+    id: 7,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image54
+        }
+      }
+    }
+  },
+  {
+    id: 8,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image55
+        }
+      }
+    }
+  },
+  {
+    id: 9,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image56
+        }
+      }
+    }
+  },
+  {
+    id: 10,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image57
         }
       }
     }
@@ -230,7 +567,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image19
+          url: image58
         }
       }
     }
@@ -243,7 +580,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image20
+          url: image59
         }
       }
     }
@@ -259,7 +596,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image21
+          url: image60
         }
       }
     }
@@ -272,7 +609,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image22
+          url: image82
         }
       }
     }
@@ -285,7 +622,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image23
+          url: image62
         }
       }
     }
@@ -298,7 +635,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image24
+          url: image63
         }
       }
     }
@@ -309,6 +646,138 @@ export const initialDataSetThree = [
       name: "a beautiful photo",
       description: "This is a beautiful photo that I took.",
 
+      image: {
+        file: {
+          url: image64
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image21
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image67
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image68
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image69
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image70
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image71
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image72
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image73
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image74
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+      image: {
+        file: {
+          url: image75
+        }
+      }
+    }
+  },
+  {
+    id: 18,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
       image: {
         file: {
           url: image25
@@ -323,7 +792,33 @@ export const initialDataSetThree = [
       description: "This is a beautiful photo that I took.",
       image: {
         file: {
-          url: image26
+          url: image24
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image91
+        }
+      }
+    }
+  },
+  {
+    id: 6,
+    fields: {
+      name: "a beautiful photo",
+      description: "This is a beautiful photo that I took.",
+
+      image: {
+        file: {
+          url: image92
         }
       }
     }
