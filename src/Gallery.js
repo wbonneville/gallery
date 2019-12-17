@@ -34,8 +34,11 @@ const MyImage = ({ src, header }) => {
   const [likes, setLikes] = useState(0);
   const [ref, hovered] = useHover();
 
-  const addLike = () => {
+  var addLike = () => {
     setLikes(likes + 1);
+    if (likes === 1) {
+      setLikes(likes);
+    }
   };
 
   return (
