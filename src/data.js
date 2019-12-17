@@ -122,7 +122,7 @@ export const initialData = [
       description: "This is a beautiful photo that I took.",
       image: {
         file: {
-          url: image2
+          url: image4
         }
       }
     }
@@ -135,7 +135,7 @@ export const initialData = [
 
       image: {
         file: {
-          url: image2
+          url: image5
         }
       }
     }
@@ -149,7 +149,7 @@ export const initialData = [
 
       image: {
         file: {
-          url: image2
+          url: image6
         }
       }
     }
@@ -162,7 +162,7 @@ export const initialData = [
 
       image: {
         file: {
-          url: image10
+          url: image7
         }
       }
     }
@@ -178,7 +178,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image4
+          url: image8
         }
       }
     }
@@ -191,7 +191,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image3
+          url: image9
         }
       }
     }
@@ -204,7 +204,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image2
+          url: image10
         }
       }
     }
@@ -217,7 +217,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image2
+          url: image18
         }
       }
     }
@@ -230,7 +230,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image2
+          url: image19
         }
       }
     }
@@ -243,7 +243,7 @@ export const initialDataSetTwo = [
 
       image: {
         file: {
-          url: image2
+          url: image20
         }
       }
     }
@@ -259,7 +259,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image4
+          url: image21
         }
       }
     }
@@ -272,7 +272,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image9
+          url: image22
         }
       }
     }
@@ -285,7 +285,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image8
+          url: image23
         }
       }
     }
@@ -298,7 +298,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image7
+          url: image24
         }
       }
     }
@@ -311,7 +311,7 @@ export const initialDataSetThree = [
 
       image: {
         file: {
-          url: image5
+          url: image25
         }
       }
     }
@@ -323,7 +323,7 @@ export const initialDataSetThree = [
       description: "This is a beautiful photo that I took.",
       image: {
         file: {
-          url: image6
+          url: image26
         }
       }
     }
