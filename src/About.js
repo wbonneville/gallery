@@ -1,12 +1,10 @@
 import React from "react";
-import Info from "./Info";
 
 import { AboutWrapper } from "./Styles";
 
 const About = () => {
   return (
     <>
-      <Info />
       <AboutWrapper>
         <div className="row center-xs">
           <div className="col-xs-6">

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { initialData, initialDataSetTwo, initialDataSetThree } from "./data";
 import Info from "./Info";
 import useModal from "use-react-modal";
+import allCount from "./count";
 
 // import styled components from styles
 
@@ -76,31 +77,11 @@ const Gallery = () => {
   const [data, setData] = useState(initialData);
   const [dataTwo, setDataTwo] = useState(initialDataSetTwo);
   const [dataThree, setDataThree] = useState(initialDataSetThree);
-
-  const allCount = () => {
-    let dataCountOne = 0;
-    let dataCountTwo = 0;
-    let dataCountThree = 0;
-
-    data.map(item => {
-      dataCountOne += 1;
-    });
-
-    dataTwo.map(item => {
-      dataCountTwo += 1;
-    });
-
-    dataThree.map(item => {
-      dataCountThree += 1;
-    });
-
-    let total = dataCountOne + dataCountTwo + dataCountThree;
-    return total;
-  };
+  const [count, setCount] = useState(allCount());
 
   return (
     <Wrapper>
-      <Info allCount={allCount()} />
+      <Info allCount={count} />
 
       <Styles className="row">
         <Div className="col-xs-4">
