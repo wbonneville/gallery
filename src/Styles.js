@@ -4,7 +4,7 @@ import image from "./images/background.jpg";
 import buddha from "./images/buddha.png";
 
 export const ModalImage = styled.img`
-  height: 570px;
+  height: 550px;
 `;
 
 export const AboutWrapper = styled.div`
@@ -85,6 +85,7 @@ export const GalleryTitle = styled.div`
 `;
 
 export const MyImageDiv = styled.div`
+  cursor: pointer;
   position: relative;
   font-size: 12px;
   & .likes {
@@ -111,7 +112,6 @@ export const MyImageDiv = styled.div`
     display: flex;
     color: white;
     position: absolute;
-
     opacity: 0.9;
     font-weight: 100;
     margin-left: 3%;
