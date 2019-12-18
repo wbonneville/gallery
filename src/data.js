@@ -790,7 +790,6 @@ export const initialDataSetThree = [
     fields: {
       name: "a beautiful photo",
       description: "This is a beautiful photo that I took.",
-
       image: {
         file: {
           url: image91
@@ -803,7 +802,6 @@ export const initialDataSetThree = [
     fields: {
       name: "a beautiful photo",
       description: "This is a beautiful photo that I took.",
-
       image: {
         file: {
           url: image92
@@ -816,7 +814,6 @@ export const initialDataSetThree = [
     fields: {
       name: "a beautiful photo",
       description: "This is a beautiful photo that I took.",
-
       image: {
         file: {
           url: image90
