@@ -2,7 +2,6 @@ import React from "react";
 import Gallery from "./Gallery";
 import About from "./About";
 import Info from "./Info";
-import count from "./count";
 
 // import data
 
