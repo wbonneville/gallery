@@ -9,6 +9,8 @@ import {
   Container
 } from "./Styles.js";
 
+// destructuring
+// get allCount prop from gallery
 export default function Info({ allCount }) {
   return (
     <div>
@@ -33,6 +35,7 @@ export default function Info({ allCount }) {
           <hr />
           <div className="links">
             <Link to="/">
+              {/* display photo count */}
               <h2> photos {allCount}</h2>
             </Link>
             <Link to="/about">

@@ -5,15 +5,15 @@ import useModal from "use-react-modal";
 import allCount from "./count";
 
 // import styled components from styles
-
 import { Wrapper, Styles, Div, MyImageDiv, ModalImage } from "./Styles.js";
 
+// useHover function
 const useHover = () => {
   const ref = useRef();
   // hover hook
   const [hovered, setHovered] = useState(false);
 
-  // set the state of hovered
+  // set the state of hovered to true or false
   const enter = () => setHovered(true);
   const leave = () => setHovered(false);
 

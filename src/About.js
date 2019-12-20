@@ -1,5 +1,6 @@
 import React from "react";
 
+// import styled component
 import { AboutWrapper } from "./Styles";
 
 const About = () => {
