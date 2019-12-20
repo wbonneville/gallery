@@ -1,3 +1,6 @@
+// to add a picture to the gallery
+// simply add an import
+
 import image1 from "./images/fall1.jpg";
 import image2 from "./images/spring1.jpg";
 import image3 from "./images/test.jpg";
@@ -88,6 +91,10 @@ import image94 from "./images/94.jpg";
 import image95 from "./images/95.jpg";
 import image96 from "./images/96.jpg";
 import image97 from "./images/97.jpg";
+
+// there are three rows of images you can choose from
+// copy and paste an object and add the name of the image you imported
+// edit data fields to your liking
 
 export const initialData = [
   {
