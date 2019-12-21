@@ -35,7 +35,7 @@ const useHover = () => {
 const MyImage = ({ src, header }) => {
   // destructure to get props out of useModal
   const { isOpen, openModal, closeModal, Modal } = useModal({
-    background: "rgba(0, 0, 0, 0.9)"
+    background: "rgba(0, 0, 0, 0.92)"
   });
   // hook for likes
   const [likes, setLikes] = useState(0);
