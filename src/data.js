@@ -4,7 +4,6 @@
 import image1 from "./images/fall1.jpg";
 import image2 from "./images/spring1.jpg";
 import image3 from "./images/test.jpg";
-import image4 from "./images/art.jpg";
 import image5 from "./images/birch2.jpg";
 import image6 from "./images/firesky.jpg";
 import image7 from "./images/greenbookmill.jpg";
